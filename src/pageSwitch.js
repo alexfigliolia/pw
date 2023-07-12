@@ -1113,10 +1113,6 @@
     }else ROOT.pageSwitch=struct;
 
 })(typeof window !== 'undefined' ? window : global, function(wrap,config){
-    if(!(this instanceof arguments.callee)){
-        return new arguments.callee(wrap,config);
-    }
-
     this.container=typeof wrap=='string'?document.getElementById(wrap):wrap;
     this.init(config||{});
 });
